@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "411cdb81-c16b-402b-bb63-71de8e734b01",
+		"name": "nestjs_demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postProducts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"nguyen hoang anh\",\r\n    \"age\":22,\r\n    \"email\":\"nguyenhoanganh@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProductsID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Products/6177b53cf25f6c95c4c80f0b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Products",
+						"6177b53cf25f6c95c4c80f0b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patchProductsID",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Nguyen Hoang Anh\",\r\n    \"age\":21,\r\n    \"email\":\"hoanganh@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Products/6177b04bc9cc5a1dc8377f08",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Products",
+						"6177b04bc9cc5a1dc8377f08"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProductsID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Products/6177b04bc9cc5a1dc8377f08",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Products",
+						"6177b04bc9cc5a1dc8377f08"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
